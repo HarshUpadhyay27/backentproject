@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --main-bg: #252525;
+}
+a{
+    text-decoration: none;
+}
+.navbar {
+  color: #fff;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 2.3rem;
+}
+.nav-item a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.navbar-toggler{
+    color: #fff;
+}
+footer {
+  margin-top: auto;
+  background-color: var(--main-bg);
+  color: #fff;
+  font-size: 1.8rem;
+}
+.container{
+    margin-top: 7rem;
+    max-width: 800px;
+    padding: 5rem;
+    box-shadow: 0 -2px 8px var(--main-bg);
+}
+.container form input{
+    font-size: 1.5rem;
+}
+.container form .btn-primary{
+    font-size: 1.8rem;
+}
+.account{
+    font-size: 1.8rem;
+    color: var(--main-bg);
+    text-align: center;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+.box{
+  max-width: 400px;
+  margin-top: 7rem !important;
+  padding: 5rem;
+  box-shadow: 0 -2px 8px var(--main-bg);
+  margin: 0 auto;
+}
+.box form input{
+  font-size: 1.5rem;
+}
+.box form .btn-primary{
+  font-size: 1.8rem;
+}
+.box a{
+  color: var(--main-bg);
+}
+@media only screen and (max-width: 850px){
+  .container{
+    margin: 7rem 2rem 7rem 2rem;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 400px){
+  .box{
+    width: auto;
+    margin:7rem 2rem;
+    padding: 5rem 2rem;
+  }
+  .container{
+    padding: 5rem 2rem;
+  }
+}

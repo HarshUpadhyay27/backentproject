@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body>
+  {{>navbar}}
+  <div class="main-container">
+    <div class="container">
+      <form class="row g-3" action="/signup" method="POST" >
+        <div class="col-md-6">
+          <input type="text" class="form-control" value="" name="fname" placeholder="Frist Name">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" value="" name="lname" placeholder="Last Name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" value="" name="email" placeholder="Your Email">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" minlength="10" maxlength="10" value="" name="pnumber" placeholder="Your Phone Number">
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" value="" name="address" placeholder="Enter Your Address">
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control" name="password" value="" placeholder="Password">
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control" name="cpassword" value="" placeholder="confirm Password">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" value="signup">Sign Up</button>
+        </div>
+        <a href="/signin" class="account">Alredy have a account ?</a>
+      </form>
+    </div>
+  </div>
+  {{>footer}}
+</body>
+
+</html>
